@@ -1,257 +1,167 @@
-# Project Jupyter Documentation
-
-Welcome to the Project Jupyter documentation site. Jupyter is a large umbrella
-project that covers many different software offerings and tools, including the
-popular [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
-and [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/) web-based
-notebook authoring and editing applications. The Jupyter project and its
-subprojects all center around providing tools (and [standards](https://docs.jupyter.org/en/latest/#sub-project-documentation))
-for interactive computing with [computational notebooks](#what-is-a-notebook).
-
-(what-is-a-notebook)=
-## What is a Notebook?
-
-![jupyterlab.png](_static/_images/jupyterlab.png)
-
-**Pictured:** *A computational notebook document, shown inside JupyterLab*
-
-> 📘 **Note:** Read [What is Jupyter?](what_is_jupyter) for a detailed look at Jupyter and notebooks.
-
-A notebook is a shareable document that combines computer code, plain language
-descriptions, data, rich visualizations like 3D models, charts, graphs and
-figures, and interactive controls. A notebook, along with an editor (like
-JupyterLab), provides a fast interactive environment for prototyping and
-explaining code, exploring and visualizing data, and sharing ideas with
-others.
-
-## Where do I start?
-
-Most people begin with Jupyter by installing an editing application that fits
-their preferences, like [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/)
-or [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/),
-and making their first notebook document:
-
-- Jupyter Notebook offers a simplified, lightweight notebook authoring experience
-- JupyterLab offers a feature-rich, tabbed multi-notebook editing environment
-  with additional tools like a customizable interface layout and system console
-- And more... read about additional notebook interfaces [here](projects/user-interfaces)!
-
-You can also develop your own extensions or applications on top of existing Jupyter
-software. Check out the subproject sites below for more information.
-
-## More information
-
-These are a few high-level topics to help you learn more about the Jupyter community and ecosystem.
-
-```{list-table}
-:class: front_page_table
-
-* - {doc}`Get started with Jupyter Notebook <start/index>`
-
-      Try the notebook
-
-   - {doc}`Community <community/content-community>`
-
-      Sustainability and growth
-
-* - {doc}`Architecture <projects/architecture/content-architecture>`
-
-      What is Jupyter?
-
-   - {doc}`Contributor Guides <contributing/content-contributor>`
-
-      How to contribute to the projects
-
-* - {doc}`Narratives and Use Cases <use/use-cases/content-user>`
-
-      Narratives of common deployment scenarios
-
-   - {doc}`Release Notes <releases>`
-
-      New features, upgrades, deprecation notes, and bug fixes
-
-* - {doc}`IPython <reference/ipython>`
-
-      An interactive Python kernel and REPL
-
-   - {doc}`Reference <reference/content-reference>`
-
-      APIs
-
-* - {doc}`Installation, Configuration, and Usage <projects/content-projects>`
-
-      Documentation for users
-
-   - {doc}`Advanced <use/advanced/content-advanced>`
-
-      Documentation for advanced use-cases
-```
-
-## Sub-project documentation
-
-Individual sub-projects are typically organized around a key feature of the
-Jupyter ecosystem, and have their own community, documentation and governance.
-Below is a list of documentation for major parts of the Jupyter ecosystem.
-
-````{grid} 1 1 2 2
-:gutter: 3
-
-```{grid-item-card}
-User Interfaces
-^^^^^^
-* [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/)
-* [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/latest/)
-* [JupyterLite](https://jupyterlite.readthedocs.io/en/latest/)
-* [nbclassic](https://github.com/jupyterlab/nbclassic)
-* [Jupyter Console](https://jupyter-console.readthedocs.io/en/latest)
-* [Qt console](https://qtconsole.readthedocs.io/en/stable)
-* [Voilà](https://voila.readthedocs.io/)
-```
-
-```{grid-item-card}
-JupyterHub
-^^^^^^
-* [JupyterHub](https://jupyterhub.readthedocs.io/en/latest)
-* [Configurable HTTP proxy](https://github.com/jupyterhub/configurable-http-proxy)
-* Authenticators: [LDAP](https://github.com/jupyterhub/ldapauthenticator), [OAuth](https://oauthenticator.readthedocs.io/en/latest/), [Native](https://native-authenticator.readthedocs.io/en/latest/), [LTI](https://ltiauthenticator.readthedocs.io/en/latest/)
-* Spawners: [sudo](https://github.com/jupyterhub/sudospawner), [Docker](https://jupyterhub-dockerspawner.readthedocs.io/en/latest/), [Kubernetes](https://jupyterhub-kubespawner.readthedocs.io/en/latest/)
-* [Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/en/latest/)
-* [All JupyterHub Projects...](https://github.com/jupyterhub)
-```
-
-```{grid-item-card}
-Working with Notebooks
-^^^^^^
-* [nbclient](https://nbclient.readthedocs.io/en/latest/) - execution
-* [nbconvert](https://nbconvert.readthedocs.io/en/latest/) - conversion
-* [nbviewer](https://github.com/jupyter/nbviewer/) - viewing
-* [nbdime](https://nbdime.readthedocs.io/) - comparing and merging
-* [nbgrader](https://nbgrader.readthedocs.io/en/latest/) - grading
-* [nbformat](https://nbformat.readthedocs.io/en/latest/) - modification and validation
-```
-
-```{grid-item-card}
-Kernels
-^^^^^^
-* [IPython](https://ipython.readthedocs.io/en/stable/)
-* [IRkernel](https://irkernel.github.io)
-* [IJulia](https://github.com/JuliaLang/IJulia.jl)
-* [Xeus kernels](https://xeus.readthedocs.io/en/latest/)
-* [Community maintained kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
-```
-
-```{grid-item-card}
-IPython
-^^^^^^
-* [IPython](https://ipython.readthedocs.io/en/stable/)
-* [ipykernel](https://ipython.readthedocs.io/en/stable/)
-* [ipyparallel](https://ipyparallel.readthedocs.io/en/latest/)
-* [traitlets](https://traitlets.readthedocs.io/en/stable/)
-```
-
-```{grid-item-card}
-Architecture and Specification
-^^^^^^
-* [nbformat](https://nbformat.readthedocs.io/en/latest/api.html) - Jupyter Notebook Format
-* [jupyter-client](https://jupyter-client.readthedocs.io/en/latest/) - Jupyter Messaging Protocol
-* [jupyter-core](https://jupyter-core.readthedocs.io/en/latest/)
-* [jupyter-server](https://jupyter-server.readthedocs.io/)
-* [jupyterlab-server](https://jupyterlab-server.readthedocs.io/en/stable/)
-```
-
-```{grid-item-card}
-Deployment
-^^^^^^
-* [Docker Stacks](https://jupyter-docker-stacks.readthedocs.io/en/latest/)
-* [Kernel Gateway](https://jupyter-kernel-gateway.readthedocs.io/en/latest/)
-* [Enterprise Gateway](https://jupyter-enterprise-gateway.readthedocs.io/en/latest/)
-```
-
-```{grid-item-card}
-Widgets
-^^^^^^
-* [ipywidgets](https://ipywidgets.readthedocs.io/)
-* [widget-cookiecutter](https://github.com/jupyter-widgets/widget-cookiecutter/)
-* [All Widget Projects...](https://github.com/jupyter-widgets)
-```
-
-```{grid-item-card}
-Artificial Intelligence
-^^^^^^^^^^^^^^^^^^^^^^^
-* [jupyter-ai](https://jupyter-ai.readthedocs.io/en/latest/)
-* [jupyterlite/ai](https://github.com/jupyterlite/ai)
-* [jupyter-ai-contrib](https://github.com/jupyter-ai-contrib) - unofficial
-```
-````
-
-## Table of Contents
-
-The rest of the documentation on this site covers major use-cases of the Jupyter ecosystem, as well as topics that will help you navigate the various parts of the Jupyter community.
-For more in-depth documentation about a specific tool, we recommend checking out that tool's documentation (see the list above).
-
-(user-docs)=
-
-```{toctree}
-:maxdepth: 2
-
-start/index
-```
-
-(jupyter-using)=
-
-```{toctree}
-:maxdepth: 2
-
-use/using
-```
-
-(jupyter-subprojects)=
-
-```{toctree}
-:maxdepth: 2
-
-projects/content-projects
-```
-
-```{toctree}
-:maxdepth: 2
-
-community/content-community
-```
-
-(dev-docs)=
-
-```{toctree}
-:maxdepth: 2
-
-contributing/content-contributor
-```
-
-```{toctree}
-:maxdepth: 2
-
-reference/content-reference
-```
-
-## Resources
-
-```{csv-table}
-:header: Site, Description
-:widths: 18, 35
-
-[Jupyter website](https://jupyter.org), Keep up to date on Jupyter
-[IPython website](https://ipython.org), Learn more about IPython
-[Jupyter Discourse forum](https://discourse.jupyter.org/), Start here for help and support questions
-[Jupyter Accessibility](https://jupyter-accessibility.readthedocs.io/), Accessibility sub-project documentation
-[Jupyter mailing list](https://groups.google.com/forum/#!forum/jupyter), General discussion of Jupyter's use
-[Jupyter in Education group](https://groups.google.com/forum/#!forum/jupyter-education), Discussion of Jupyter's use in education
-[NumFocus](https://www.numfocus.org), "Promotes world-class, innovative, open source scientific software"
-[Donate to Project Jupyter](https://jupyter.org/about#donate), Please contribute to open science collaboration and sustainability
-```
-
-
-## Indices and tables
-
-- {ref}`genindex`
-- {ref}`glossary`
-- {ref}`search`
+3# Student Grade Calculator
+# Module: CMP-L031-0 Software Development - Coursework 1-A
+# Name: YOUR NAME
+# Student ID: YOUR STUDENT ID
+# Last updated: DD Mon YYYY
+#
+# This program asks for the details of up to 3 students, works out
+# their overall score, category and age, shows the results in a table
+# and saves the table to students.txt.
+
+from datetime import datetime, date
+from tabulate import tabulate
+
+
+# Works out the weighted overall score and returns it as a whole number
+def calculate_overall_score(cw1, cw2, cw3, test):
+    score = (cw1 * 0.10) + (cw2 * 0.20) + (cw3 * 0.30) + (test * 0.40)
+    # round() in Python turns 72.5 into 72, so I add 0.5 to round up
+    return int(score + 0.5)
+
+
+# Finds the category for an overall score, e.g. 75 gives "72- First"
+def determine_category(score):
+    if score == 100:
+        return "100- Aurum Standard"
+    elif score >= 82:
+        return "82- Upper First"
+    elif score >= 72:
+        return "72- First"
+    elif score >= 62:
+        return "62- 2:1"
+    elif score >= 52:
+        return "52- 2:2"
+    elif score >= 42:
+        return "42- Third"
+    elif score >= 32:
+        return "32- Condonable Fail"
+    elif score > 0:
+        return "5- Fail"
+    else:
+        return "0- Deficit Opus"
+
+
+# Works out a student's age in years from their date of birth
+def calculate_age(dob):
+    today = date.today()
+    age = today.year - dob.year
+    # If the birthday has not happened yet this year, take one off
+    if (today.month, today.day) < (dob.month, dob.day):
+        age = age - 1
+    return age
+
+
+# Asks for a student ID until a valid one is entered (or 'end')
+def get_student_id(used_ids):
+    while True:
+        student_id = input("Enter student ID (or 'end' to stop): ").strip()
+        if student_id.lower() == "end":
+            return "end"
+        if student_id == "":
+            print("ID cannot be empty. Try again.")
+        elif not student_id.isalnum():
+            print("ID can only have letters and numbers. Try again.")
+        elif len(student_id) < 4 or len(student_id) > 10:
+            print("ID must be 4 to 10 characters long. Try again.")
+        elif student_id in used_ids:
+            print("This ID has already been entered. Try again.")
+        else:
+            return student_id
+
+
+# Asks for the student's name until it is valid
+# (letters, plus spaces, - and ' for names like Mary-Jane O'Brien)
+def get_name():
+    while True:
+        name = input("Enter student name: ").strip()
+        letters = name.replace(" ", "").replace("-", "").replace("'", "")
+        if letters.isalpha():
+            return name
+        print("Name should only contain letters, spaces, - or '. Try again.")
+
+
+# Asks for a date of birth until a real, sensible date is entered
+def get_dob():
+    while True:
+        dob_text = input("Enter date of birth (DD/MM/YYYY): ").strip()
+        try:
+            dob = datetime.strptime(dob_text, "%d/%m/%Y").date()
+        except ValueError:
+            print("Wrong date format. Use DD/MM/YYYY. Try again.")
+            continue
+        if dob > date.today():
+            print("Date of birth cannot be in the future. Try again.")
+        elif calculate_age(dob) < 16 or calculate_age(dob) > 100:
+            print("Age must be between 16 and 100. Try again.")
+        else:
+            return dob
+
+
+# Asks for one score until a number from 0 to 100 is entered
+def get_score(part_name):
+    while True:
+        try:
+            score = float(input("Enter " + part_name + " score (0-100): "))
+        except ValueError:
+            print("Please enter a number. Try again.")
+            continue
+        if score >= 0 and score <= 100:
+            return score
+        print("Score must be between 0 and 100. Try again.")
+
+
+# Main program: collects up to 3 students, then shows and saves the table
+def main():
+    students = []    # list of dictionaries, one dictionary per student
+    used_ids = []    # to stop the same ID being entered twice
+
+    print("Student Grade Calculator")
+    print("You can enter up to 3 students.")
+
+    while len(students) < 3:
+        print("\nStudent", len(students) + 1)
+        student_id = get_student_id(used_ids)
+        if student_id == "end":
+            break
+
+        name = get_name()
+        dob = get_dob()
+        cw1 = get_score("Coursework 1")
+        cw2 = get_score("Coursework 2")
+        cw3 = get_score("Coursework 3")
+        test = get_score("Final Test")
+
+        overall = calculate_overall_score(cw1, cw2, cw3, test)
+
+        student = {
+            "ID": student_id,
+            "Name": name,
+            "D.o.B": dob.strftime("%d/%m/%Y"),
+            "Age": calculate_age(dob),
+            "CW1": cw1,
+            "CW2": cw2,
+            "CW3": cw3,
+            "Test": test,
+            "Overall": overall,
+            "Category": determine_category(overall)
+        }
+        students.append(student)
+        used_ids.append(student_id)
+
+    if len(students) == 0:
+        print("No students were entered.")
+        return
+
+    table = tabulate(students, headers="keys", tablefmt="grid")
+    print()
+    print(table)
+
+    file = open("students.txt", "w")
+    file.write(table)
+    file.close()
+    print("Table saved to students.txt")
+
+
+# Only run main() when this file is run directly
+if __name__ == "__main__":
+    main()        
